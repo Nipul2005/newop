@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style >
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: ;
+        }
+        
+        body{
+            min-width:100%;
+            min-height: 100vh;
+            display:flex;
+            align-items: center;
+            justify-content: centre;
+            background: lightgrey;
+            padding: 2%;
+        }
+        
+        
+        #container{
+            width:100%;
+            height: auto;
+            box-shadow: 0 0 1vmin 0.2vmin grey;
+            background:white;
+        }
+        
+        .mainer{
+            width:100%;
+            height: 30%;
+            background-image:url('/images/hero.jpg');
+            background-position: Center;
+            background-size: cover;
+        }
+        nav{
+            width:100%;
+            height: 5vh;
+            display: flex;
+            align-items: centre;
+            justify-content: space-between ;   
+            padding:1%;
+            gap:2%;
+        }
+        
+        
+        
+        
+        
+       .logo-name{
+           height:100%;
+           width: 20%;
+           display:flex;
+            justify-content: center;
+            align-items:center;
+            color: white;
+            font-size: 4vmin;
+       } 
+        
+        span{
+            color: #ff5574;
+        }
+        
+        
+        .buttons{
+            width: 60%;
+            height:100%;
+            display:flex;
+            justify-content: space-between;
+            align-items:center;
+            color: black;
+        }
+        
+        
+        
+        .buttons h4{
+            font-size: 2vmin;
+            font-weight: 450;
+        }
+        
+        
+        
+     .watch-text{
+         padding: 2%;
+     }   
+     
+     .bold-text{
+         width:100%;
+         
+         color: white;
+         font-size: 4vmin;
+     }
+     
+     .small-text{
+         width:100%;
+         margin-top: 5%;
+         font-size: 3vmin;
+         color: white;
+         padding: 1%;
+         backdrop-filter: blur(100px);
+         letter-spacing: 0.1vmin;
+     }
+     
+     .buy{
+         width:100%;
+         height:  auto;
+         display:flex;
+         justify-content: space-between;
+         align-items:center; 
+         margin: 2%;
+     }
+     
+     .buy div{
+         width: 20%;
+         height: 3em;
+         font-size: 2.3vmin;
+         background: red;
+         display:flex;
+         justify-content: center;
+         align-items:center; 
+         color: white;
+         border-radius: 0.3em;
+         padding: 1%;
+         font-weight: 450;
+         box-shadow: 0 0 1vmin 0.1vmin #ff5574;
+     }
+     
+     
+     .mainer-2{
+         width:100%;
+         height: 50%;
+     }
+     
+     .con-1{
+         width:100%;
+         height: 100%;
+     }
+     
+     .det-1{
+         height: 25%;
+         width: 100%;
+         display:flex;
+         justify-content: center;
+         align-items: center; 
+         flex-direction: column;
+         padding:2%;
+     }
+     
+     .det-1 h2{
+         font-size: 5vmin;
+         font-weight: 450;
+     }
+     
+     .det-1 p{
+         font-size: 3vmin;
+         width:100%;
+         text-align: center;
+         font-weight: 400;
+         
+     }
+     
+     
+     .det-2{
+         height: 75%;
+         width: 100%;
+     }
+     
+     .infor-1{
+         height: 100%;
+         width: 100%;
+         display:flex;
+         justify-content: center;
+         align-items: center; 
+         padding: 1%;
+         flex-direction: column;
+     }
+     
+     .box-1{
+         width:100%;
+         height: 100%;
+         display:flex;
+         justify-content: center;
+         align-items: center; 
+         flex-direction: column;
+         padding: 2%;
+     }
+     
+     .box-1 h3{
+         display:flex;
+         justify-content: center;
+         align-items: center; 
+         border-radius: 50%;
+         padding: 2%;
+         background: #ff5574;
+         box-shadow: 0 0 1vmin 0.1vmin #ff5574;
+     }
+     
+     .box-1 h4{
+         font-size: 4vmin;
+         margin-block: 2%;
+     }
+     
+     .box-1 i{
+         color: white;
+         font-size: 3vmin;
+         
+     }
+     
+     .box-1 p{
+         font-size: 2vmin;
+         text-align: center;
+     }
+     
+     
+     .mainer-3{
+         height: 20%;
+         width: 100%;
+         background: ghostwhite;
+         padding:2%;
+     }
+     
+  .m-3-info{
+      height: 10em;
+      width:100%;
+      display:flex;
+      justify-content: space-around;
+      align-items: center; 
+  }   
+  
+  
+  .m-3-img{
+      height: 80%;
+      width: 30%;
+      background-image: url("/images/second.jpg");
+      background-position: center;
+      background-size: cover;
+      border-radius: 0.5em;
+      box-shadow: 0 0 1vmin 0.11vmin lightblue;
+  }
+  
+  .pro-info{
+      width: 50%;
+      height: 100%;
+      display:flex;
+      justify-content: centre;
+      align-items: center; 
+      flex-direction: column;
+  }
+  
+  
+ .pro-info h3{
+     width:100%;
+     font-size: 5vmin;
+     font-weight:  450;
+     margin-block: 2%;
+ } 
+
+
+.pro-info li{
+    font-size: 3vmin;
+}
+  
+  @media(min-width: 506px){
+      .infor-1{
+          flex-direction: row;
+      }
+      
+      .m-3-img{
+          width: 10%;
+          height: 60%;
+      }
+      
+      .pro-info p{
+          line-height: Normal;
+              font-size: 1.5vmin;
+             
+          }
+      
+       .pro-info h3{
+           width: 65%;
+           font-size: 3vmin;
+           font-weight:  450;
+           margin-block: 1%;
+       }
+       
+       .pro-info li{
+            font-size: 1.8vmin;
+            
+        }
+  }
+    </style>
+</head>
+<body>
+    
+    
+ <div id="container">
+     
+ <div class="mainer">
+    <nav>
+        <div class="logo-name">
+            <h3 class="name"><span>Pr</span>emat</h3>
+        </div>
+        <div class="buttons">
+            <h4>Home</h4>
+            <h4>Features</h4>
+            <h4>About</h4>
+            <h4>Products</h4>
+            <h4>Faq</h4>
+            <h4>Testimonial</h4>
+            <h4>Contact</h4>
+        </div>
+    </nav>
+    
+    <div class="watch-text">
+        <div class="bold-text">
+            <h2>
+                Smart Digital <br>
+                Watch for <br>
+                Luxurious Life
+            </h2>
+        </div>
+        <div class="small-text">
+            <p>
+              Embrace timeless sophistication with the elegance of a luxurious watch, where each moment exudes opulent allure.
+            </p>
+        </div>
+        <div class="buy">
+            <div>Buy Products</div>
+        </div>
+    </div>
+  </div>  
+  
+  <!-- mainer one ended -->
+  
+  
+  <!-- mainer 2 started -->
+  <div class="mainer-2">
+      <div class="con-1 det-1">
+          <h2>Product Feature</h2>
+          <p>Stay connected on the go with seamless notifications and call alerts, while also tracking your fitness progress with integrated health monitoring and personalized activity insights.</p>
+     </div>
+      
+  
+  
+     <div class="con-1 det-2">
+          <div class="infor-1">
+              <div class="box-1">
+                <h3> <i class="fa-solid fa-splotch"></i></h3>
+                  <h4>High quality</h4>
+                  <p>High-quality materials and precision engineering ensure durability and reliability, elevating your experience to new heights.</p>
+              </div>
+              
+              <div class="box-1">
+                  <h3><i class="fa-solid fa-wand-magic-sparkles"></i></h3>
+                  <h4>Awesome designs</h4>
+                  <p>With an awe-inspiring design that seamlessly blends style and functionality, your device becomes a statement piece in the modern tech landscape.</p>
+              </div>
+          </div>
+          
+          <div class="infor-1">
+              <div class="box-1">
+                  <h3><i class="fa-solid fa-microchip"></i></h3>
+                  <h4>Latest Technology</h4>
+                  <p>Embrace the forefront of innovation with cutting-edge technology that anticipates your needs and enhances your daily routines effortlessly.</p>
+              </div>
+              
+              <div class="box-1">
+                 <h3><i class="fa-solid fa-user-group"></i></h3>
+                  <h4>User friendly</h4>
+                  <p>Navigate effortlessly through features and settings with an intuitive interface designed to put the power of technology at your fingertips with ease.</p>
+              </div>
+          </div>   
+      </div>      
+  </div>
+  <!-- mainer 2 ended -->
+  <!-- mainer 3 starrd -->
+   <div class="mainer-3">
+         <div class="m-3-info">
+             <div class="m-3-img">
+                 
+             </div>
+             <div class="pro-info">
+                 <h3>About the Product</h3>
+                 <ul>
+                     <li>Mdoel #240 FacilaSmart</li>
+                     <li>Camera 24mg pixel</li>
+                     <li>Image processer DGSC 7</li>
+                     <li>Effective pixels across 50mg pixel</li>
+                     <li>Aspect ratio 3.2</li>
+                     <li>Mounted le Lense</li>
+                 </ul>
+             </div>
+         </div> 
+   </div>  
+      
+ </div>   
+</body>
+</html>
